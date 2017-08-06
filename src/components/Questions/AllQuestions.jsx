@@ -9,7 +9,7 @@ export default class AllQuestions extends Component {
 
     render() {
         return (
-            <div>
+            <div className="container-fluid">
                 <h1>All Questions</h1>
             </div>
         )

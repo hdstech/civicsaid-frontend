@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import axios from 'axios';
 import '../../styles/Main.css';
 
-export default class SingleQuestion extends Component {
+export default class AmericanHistory extends Component {
     constructor(props){
         super(props);
     }
@@ -10,7 +9,7 @@ export default class SingleQuestion extends Component {
     render() {
         return (
             <div className="container-fluid">
-                <h1>Single Question</h1>
+                <h1>American History</h1>
             </div>
         )
     }
