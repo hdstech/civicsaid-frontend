@@ -10,17 +10,13 @@ import Vocabulary from './Vocabulary/Vocabulary';
 import Info from './InfoPage/Info';
 
 export default class Main extends Component {
-    constructor(props){
-        super(props);
-    }
-
     render() {
         return (
             <div>
                 <Switch>
                     <Route exact path='/' component={Home}/>
                     <Route path='/all-questions' component={AllQuestions} />
-                    <Route path='/question' component={SingleQuestion} />
+                    <Route path='/question/:id' component={SingleQuestion} />
                     <Route path='/american-government' component={AmericanGovernment}/>
                     <Route path='/american-history' component={AmericanHistory}/>
                     <Route path='/integrated-civics' component={IntegratedCivics}/>

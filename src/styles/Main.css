@@ -1,9 +1,27 @@
 /**
+* Card Styles
+ */
+.card {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #219ece !important;
+    color: white;
+}
+
+.card-header {
+    background-color: #1e77a0 !important;
+    color: white;
+}
+
+.flash-card-btn {
+    margin: 10px;
+}
+
+/**
  * Footer Styles
  */
 
 .footer {
-    position: absolute;
+    position: relative;
     right: 0;
     bottom: 0;
     left: 0;
