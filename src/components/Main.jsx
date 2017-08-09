@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Switch, Route} from 'react-router-dom';
 import Home from './Home/Home';
 import AllQuestions from './Questions/AllQuestions';
-import SingleQuestion from './Questions/SingleQuestion';
+import FlashCard from './FlashCard/FlashCard';
 import AmericanGovernment from './Categories/AmericanGovernment';
 import AmericanHistory from './Categories/AmericanHistory';
 import IntegratedCivics from './Categories/IntegratedCivics';
@@ -16,7 +16,7 @@ export default class Main extends Component {
                 <Switch>
                     <Route exact path='/' component={Home}/>
                     <Route path='/all-questions' component={AllQuestions} />
-                    <Route path='/question/:id' component={SingleQuestion} />
+                    <Route path='/flash-card/:id' component={FlashCard} />
                     <Route path='/american-government' component={AmericanGovernment}/>
                     <Route path='/american-history' component={AmericanHistory}/>
                     <Route path='/integrated-civics' component={IntegratedCivics}/>

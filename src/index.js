@@ -3,6 +3,7 @@ import {render} from 'react-dom';
 import {BrowserRouter} from 'react-router-dom';
 import axios from 'axios';
 import './index.css';
+import '../node_modules/font-awesome/css/font-awesome.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 

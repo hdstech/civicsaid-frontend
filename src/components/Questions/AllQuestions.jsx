@@ -41,7 +41,7 @@ export default class AllQuestions extends Component {
                                 <div className="card-block">
                                     <h4>{questions.q_english}</h4>
                                 </div>
-                                <Link to={`question/${questions.id}`}>
+                                <Link to={`flash-card/${questions.id}`}>
                                     <Button className="flash-card-btn" color="danger">flash card</Button>
                                 </Link>
                             </div>

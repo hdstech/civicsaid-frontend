@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import axios from 'axios';
-import Question from './Question';
+import Question from '../Questions/Question';
 import '../../styles/Main.css';
 
-export default class SingleQuestion extends Component {
+export default class FlashCard extends Component {
 
     constructor(props) {
         super(props);
@@ -44,6 +44,6 @@ export default class SingleQuestion extends Component {
     }
 }
 
-SingleQuestion.propTypes = {
+FlashCard.propTypes = {
     question: PropTypes.object
 };
