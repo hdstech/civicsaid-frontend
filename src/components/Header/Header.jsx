@@ -5,8 +5,8 @@ import '../../styles/Main.css';
 import 'bootstrap/dist/css/bootstrap.css';
 
 export default class Header extends Component {
-    constructor(props) {
-        super(props);
+    constructor() {
+        super();
         this.toggle = this.toggle.bind(this);
         this.state = {
             dropdownOpen: false
@@ -35,13 +35,13 @@ export default class Header extends Component {
                             <DropdownItem divider/>
                             <DropdownItem header>Categories</DropdownItem>
                             <DropdownItem>
-                                <Link to="/american-history">American History</Link>
+                                <Link to={`/questions/american-government`}>American Government</Link>
                             </DropdownItem>
                             <DropdownItem>
-                                <Link to="/american-government">American Government</Link>
+                                <Link to={`/questions/american-history`}>American History</Link>
                             </DropdownItem>
                             <DropdownItem>
-                                <Link to="/integrated-civics">Integrated Civics</Link>
+                                <Link to={`/questions/integrated-civics`}>Integrated Civics</Link>
                             </DropdownItem>
                         </DropdownMenu>
                     </NavDropdown>

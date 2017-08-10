@@ -1,11 +1,11 @@
-import React, {Component} from 'react';
-import '../../styles/Main.css';
+import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.css';
 import {Button} from 'reactstrap';
+import '../../styles/Main.css';
 
-export default class AllQuestions extends Component{
+export default class Category extends Component{
     constructor(){
         super();
         this.state = {
@@ -14,11 +14,18 @@ export default class AllQuestions extends Component{
     }
 
     componentWillMount(){
-        this.getAllQuestions();
+        if ('match' in this.props && 'category' in this.props.match.params)
+            this.getAllQuestions(this.props.match.params.category);
+        else if ('questions' in this.props)
+            this.setState({
+                questions: {},
+            });
+        else
+            throw new Error('You must provide either an ID in props.match, or a question object');
     }
 
-    getAllQuestions(){
-        axios.get(`/questions/all-questions`)
+    getAllQuestions(category){
+        axios.get(`/questions/show-category/${category}`)
             .then((response) => {
                 this.setState({questions: response.data.questions});
             })
@@ -28,7 +35,7 @@ export default class AllQuestions extends Component{
     }
 
     render(){
-        let questions = this.state.questions;
+        const questions = this.state.questions;
         return (
             <div className="container-fluid">
                 {questions.map(questions =>
@@ -41,7 +48,7 @@ export default class AllQuestions extends Component{
                                 <div className="card-block">
                                     <h4>{questions.q_english}</h4>
                                 </div>
-                                <Link to={`flash-card/${questions.id}`}>
+                                <Link to={`/flash-card/${questions.id}`}>
                                     <Button className="flash-card-btn" color="danger">flash card</Button>
                                 </Link>
                             </div>
