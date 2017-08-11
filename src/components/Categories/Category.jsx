@@ -1,19 +1,21 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import axios from 'axios';
 import 'bootstrap/dist/css/bootstrap.css';
 import {Button} from 'reactstrap';
 import '../../styles/Main.css';
 
-export default class Category extends Component{
-    constructor(){
+export default class Category extends Component {
+    constructor() {
         super();
         this.state = {
             questions: [],
+            index: 0,
+            currentCategory: '',
         }
     }
 
-    componentWillMount(){
+    componentWillMount() {
         if ('match' in this.props && 'category' in this.props.match.params)
             this.getAllQuestions(this.props.match.params.category);
         else if ('questions' in this.props)
@@ -24,17 +26,26 @@ export default class Category extends Component{
             throw new Error('You must provide either an ID in props.match, or a question object');
     }
 
-    getAllQuestions(category){
+    getAllQuestions(category) {
         axios.get(`/questions/show-category/${category}`)
             .then((response) => {
-                this.setState({questions: response.data.questions});
+                this.setState({
+                    currentCategory: category,
+                    questions: [...this.state.questions, ...response.data.questions]
+                });
             })
             .catch((error) => {
                 console.log(error);
             });
     }
 
-    render(){
+    componentWillReceiveProps(nextProps) {
+        if (nextProps.match.params.category !== this.state.currentCategory){
+            window.location.reload();
+        }
+    }
+
+    render() {
         const questions = this.state.questions;
         return (
             <div className="container-fluid">
