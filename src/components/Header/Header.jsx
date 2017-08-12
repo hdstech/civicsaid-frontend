@@ -52,6 +52,7 @@ export default class Header extends Component {
                         <Link className="nav-link header-link" to="/additional-information">Info</Link>
                     </NavItem>
                 </Nav>
+                <br/>
             </div>
         )
     }
