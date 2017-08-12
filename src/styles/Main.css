@@ -41,3 +41,20 @@
 .active {
     color: #f95b4f;
 }
+
+.header-nav {
+    padding: 1rem;
+    background-color: #f95b4f;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding-left: 15px !important;
+    margin-bottom: 20px !important;
+}
+
+.header-link {
+    color: white;
+}
+
+.drop-down {
+    background-color: #f95b4f !important;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

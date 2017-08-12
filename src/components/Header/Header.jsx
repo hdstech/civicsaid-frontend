@@ -21,35 +21,35 @@ export default class Header extends Component {
 
     render() {
         return (
-            <div className="container-fluid">
-                <Nav className="justify-content-center">
+            <div>
+                <Nav className="header-nav">
                     <NavItem>
-                        <Link className="nav-link" to="/">Home</Link>
+                        <Link className="nav-link header-link" to="/">Home</Link>
                     </NavItem>
                     <NavDropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
-                        <DropdownToggle nav caret>Questions</DropdownToggle>
-                        <DropdownMenu>
+                        <DropdownToggle nav caret className="header-link">Questions</DropdownToggle>
+                        <DropdownMenu className="drop-down">
                             <DropdownItem>
-                                <Link to="/all-questions">All Questions</Link>
+                                <Link to="/all-questions" className="header-link">All Questions</Link>
                             </DropdownItem>
                             <DropdownItem divider/>
-                            <DropdownItem header>Categories</DropdownItem>
+                            <DropdownItem header className="header-link">Categories</DropdownItem>
                             <DropdownItem>
-                                <Link to={`/questions/american-government`}>American Government</Link>
+                                <Link to={`/questions/american-government`} className="header-link">American Government</Link>
                             </DropdownItem>
                             <DropdownItem>
-                                <Link to={`/questions/american-history`}>American History</Link>
+                                <Link to={`/questions/american-history`} className="header-link">American History</Link>
                             </DropdownItem>
                             <DropdownItem>
-                                <Link to={`/questions/integrated-civics`}>Integrated Civics</Link>
+                                <Link to={`/questions/integrated-civics`} className="header-link">Integrated Civics</Link>
                             </DropdownItem>
                         </DropdownMenu>
                     </NavDropdown>
                     <NavItem>
-                        <Link className="nav-link" to="/vocabulary">Vocabulary</Link>
+                        <Link className="nav-link header-link" to="/vocabulary">Vocabulary</Link>
                     </NavItem>
                     <NavItem>
-                        <Link className="nav-link" to="/additional-information">Info</Link>
+                        <Link className="nav-link header-link" to="/additional-information">Info</Link>
                     </NavItem>
                 </Nav>
             </div>

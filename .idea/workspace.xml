@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85982a34-9827-431a-8d8b-d1d980a1ff56" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Categories/Category.jsx" afterPath="$PROJECT_DIR$/src/components/Categories/Category.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/styles/Main.css" afterPath="$PROJECT_DIR$/src/styles/Main.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -35,7 +35,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Category.jsx" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Category.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Categories/Category.jsx">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-392">
@@ -55,26 +55,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Question.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Questions/Question.jsx">
+      <file leaf-file-name="Header.jsx" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Header/Header.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="15" column="26" lean-forward="true" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+            <state relative-caret-position="61">
+              <caret line="24" column="20" lean-forward="false" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
+                <marker date="1502512497000" expanded="true" signature="1858:2025" ph="..." />
+                <marker date="1502512497000" expanded="true" signature="2130:2259" ph="..." />
+                <marker date="1502512497000" expanded="true" signature="2289:2424" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Main.jsx" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Main.jsx">
+      <file leaf-file-name="Main.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/styles/Main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="11" column="16" lean-forward="false" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="508">
+              <caret line="30" column="1" lean-forward="true" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -111,11 +112,11 @@
         <option value="$PROJECT_DIR$/src/components/Questions/FlashCard.jsx" />
         <option value="$PROJECT_DIR$/src/components/Categories/AmericanGovernment.jsx" />
         <option value="$PROJECT_DIR$/src/components/Main.jsx" />
-        <option value="$PROJECT_DIR$/src/styles/Main.css" />
         <option value="$PROJECT_DIR$/src/components/Questions/AllQuestions.jsx" />
-        <option value="$PROJECT_DIR$/src/components/Header/Header.jsx" />
         <option value="$PROJECT_DIR$/src/components/FlashCard/FlashCard.jsx" />
         <option value="$PROJECT_DIR$/src/components/Categories/Category.jsx" />
+        <option value="$PROJECT_DIR$/src/components/Header/Header.jsx" />
+        <option value="$PROJECT_DIR$/src/styles/Main.css" />
       </list>
     </option>
   </component>
@@ -286,12 +287,12 @@
       <workItem from="1502330900118" duration="4805000" />
       <workItem from="1502409961226" duration="5838000" />
       <workItem from="1502502478985" duration="255000" />
-      <workItem from="1502510386260" duration="363000" />
+      <workItem from="1502510386260" duration="2091000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47702000" />
+    <option name="totallyTimeSpent" value="49430000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -406,9 +407,9 @@
           <caret line="8" column="14" lean-forward="false" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
-            <marker date="1502335209000" expanded="true" signature="1744:1887" ph="..." />
-            <marker date="1502335209000" expanded="true" signature="1992:2109" ph="..." />
-            <marker date="1502335209000" expanded="true" signature="2139:2262" ph="..." />
+            <marker date="1502512497000" expanded="true" signature="1858:2025" ph="..." />
+            <marker date="1502512497000" expanded="true" signature="2130:2259" ph="..." />
+            <marker date="1502512497000" expanded="true" signature="2289:2424" ph="..." />
           </folding>
         </state>
       </provider>
@@ -531,9 +532,9 @@
           <caret line="51" column="78" lean-forward="false" selection-start-line="51" selection-start-column="78" selection-end-line="51" selection-end-column="78" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
-            <marker date="1502335209000" expanded="true" signature="1744:1887" ph="..." />
-            <marker date="1502335209000" expanded="true" signature="1992:2109" ph="..." />
-            <marker date="1502335209000" expanded="true" signature="2139:2262" ph="..." />
+            <marker date="1502512497000" expanded="true" signature="1858:2025" ph="..." />
+            <marker date="1502512497000" expanded="true" signature="2130:2259" ph="..." />
+            <marker date="1502512497000" expanded="true" signature="2289:2424" ph="..." />
           </folding>
         </state>
       </provider>
@@ -675,13 +676,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/Main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1353">
-          <caret line="41" column="18" lean-forward="false" selection-start-line="41" selection-start-column="18" selection-end-line="41" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Footer/Footer.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -689,22 +683,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Header/Header.jsx">
+    <entry file="file://$PROJECT_DIR$/src/components/Questions/AllQuestions.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="8" column="14" lean-forward="false" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+        <state relative-caret-position="264">
+          <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
-            <marker date="1502335209000" expanded="true" signature="1744:1887" ph="..." />
-            <marker date="1502335209000" expanded="true" signature="1992:2109" ph="..." />
-            <marker date="1502335209000" expanded="true" signature="2139:2262" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Main.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
+        <state relative-caret-position="171">
           <caret line="11" column="16" lean-forward="false" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
@@ -730,20 +721,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Questions/AllQuestions.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Categories/Category.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-392">
           <caret line="1" column="35" lean-forward="false" selection-start-line="1" selection-start-column="35" selection-end-line="1" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Header/Header.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="61">
+          <caret line="24" column="20" lean-forward="false" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+            <marker date="1502512497000" expanded="true" signature="1858:2025" ph="..." />
+            <marker date="1502512497000" expanded="true" signature="2130:2259" ph="..." />
+            <marker date="1502512497000" expanded="true" signature="2289:2424" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/styles/Main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="30" column="1" lean-forward="true" selection-start-line="30" selection-start-column="1" selection-end-line="30" selection-end-column="1" />
           <folding />
         </state>
       </provider>
