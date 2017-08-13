@@ -26,6 +26,12 @@ export default class FlashCard extends Component {
             throw new Error('You must provide either an ID in props.match, or a question object');
     }
 
+	componentDidUpdate(prevProps, prevState) {
+		if (this.state.languageSelected !== prevState.languageSelected ) {
+			this.setState({ languageSelected: this.state.languageSelected });
+		}
+	}
+
     getSingleQuestion(id) {
         axios.get(`/questions/show-question/${id}`)
             .then((response) => {
