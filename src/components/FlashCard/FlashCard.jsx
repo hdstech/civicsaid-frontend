@@ -52,7 +52,7 @@ export default class FlashCard extends Component {
             <div className="container-fluid">
                 <Question questionObj={this.state.question}/>
                 <br/>
-                <Answer answerArray={this.state.answer}/>
+                <Answer answerArray={this.state.answer} language="english"/>
             </div>
         )
     }
