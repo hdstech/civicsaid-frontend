@@ -50,7 +50,7 @@ export default class FlashCard extends Component {
     render() {
         return (
             <div className="container-fluid">
-                <Question questionObj={this.state.question}/>
+                <Question questionObj={this.state.question} language="english"/>
                 <br/>
                 <Answer answerArray={this.state.answer} language="english"/>
             </div>
