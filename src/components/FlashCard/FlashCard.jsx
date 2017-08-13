@@ -9,10 +9,11 @@ export default class FlashCard extends Component {
 
     constructor(props) {
         super(props);
-
+		this.switchLanguage = this.switchLanguage.bind(this);
         this.state = {
             question: {},
 			answer: [],
+			languageSelected: '',
         }
     }
 
@@ -47,12 +48,19 @@ export default class FlashCard extends Component {
 			});
 	}
 
+	switchLanguage(language) {
+		this.setState({
+			languageSelected: language,
+		});
+	}
+
     render() {
+    	let language = this.state.languageSelected;
         return (
             <div className="container-fluid">
-                <Question questionObj={this.state.question} language="english"/>
+                <Question questionObj={this.state.question} language={language} languageUpdate={this.switchLanguage}/>
                 <br/>
-                <Answer answerArray={this.state.answer} language="english"/>
+                <Answer answerArray={this.state.answer} language={language}/>
             </div>
         )
     }
