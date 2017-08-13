@@ -7,17 +7,17 @@ import 'bootstrap/dist/css/bootstrap.css';
 export default class Header extends Component {
     constructor() {
         super();
-        this.toggle = this.toggle.bind(this);
+        this.toggleDropDown = this.toggleDropDown.bind(this);
         this.state = {
             dropdownOpen: false
         };
     }
 
-    toggle() {
-        this.setState({
-            dropdownOpen: !this.state.dropdownOpen
-        });
-    }
+	toggleDropDown() {
+		this.setState({
+			dropdownOpen: !this.state.dropdownOpen
+		});
+	}
 
     render() {
         return (
@@ -26,14 +26,14 @@ export default class Header extends Component {
                     <NavItem>
                         <Link className="nav-link white-link" to="/">Home</Link>
                     </NavItem>
-                    <NavDropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
+                    <NavDropdown isOpen={this.state.dropdownOpen} toggle={this.toggleDropDown}>
                         <DropdownToggle nav caret className="white-link">Questions</DropdownToggle>
                         <DropdownMenu className="drop-down">
                             <DropdownItem>
                                 <Link to="/all-questions" className="white-link">All Questions</Link>
                             </DropdownItem>
                             <DropdownItem divider/>
-                            <DropdownItem header className="white-link">Categories</DropdownItem>
+                            <DropdownItem header><em><strong className="muted-txt">Categories</strong></em></DropdownItem>
                             <DropdownItem>
                                 <Link to={`/questions/american-government`} className="white-link">American Government</Link>
                             </DropdownItem>
