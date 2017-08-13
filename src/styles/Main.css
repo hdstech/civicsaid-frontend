@@ -49,11 +49,29 @@
     padding-left: 15px !important;
 }
 
-.header-link {
+.white-link {
     color: white;
+}
+
+.white-link:hover {
+    color: #219ece !important;
 }
 
 .drop-down {
     background-color: #f95b4f !important;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/**
+* Language DropDown Menu
+ */
+.language-btn {
+    background-color: #219ece !important;
+    border-style: none !important;
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.language-drop-down {
+    background-color: #1e77a0 !important;
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

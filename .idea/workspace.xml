@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="85982a34-9827-431a-8d8b-d1d980a1ff56" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" afterPath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/FlashCard/FlashCard.jsx" afterPath="$PROJECT_DIR$/src/components/FlashCard/FlashCard.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Header/Header.jsx" afterPath="$PROJECT_DIR$/src/components/Header/Header.jsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Questions/Question.jsx" afterPath="$PROJECT_DIR$/src/components/Questions/Question.jsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/styles/Main.css" afterPath="$PROJECT_DIR$/src/styles/Main.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -42,7 +40,7 @@
       <file leaf-file-name="FlashCard.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/FlashCard/FlashCard.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="147">
+            <state relative-caret-position="88">
               <caret line="47" column="15" lean-forward="true" selection-start-line="47" selection-start-column="15" selection-end-line="47" selection-end-column="15" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
@@ -51,14 +49,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Question.jsx" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Question.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Questions/Question.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1650">
-              <caret line="50" column="37" lean-forward="false" selection-start-line="50" selection-start-column="37" selection-end-line="50" selection-end-column="37" />
+            <state relative-caret-position="262">
+              <caret line="49" column="71" lean-forward="false" selection-start-line="49" selection-start-column="71" selection-end-line="49" selection-end-column="71" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/styles/Main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="725">
+              <caret line="62" column="1" lean-forward="true" selection-start-line="62" selection-start-column="1" selection-end-line="62" selection-end-column="1" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -66,24 +74,14 @@
       <file leaf-file-name="Header.jsx" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Header/Header.jsx">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="24" column="42" lean-forward="false" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
+            <state relative-caret-position="472">
+              <caret line="50" column="29" lean-forward="true" selection-start-line="50" selection-start-column="29" selection-end-line="50" selection-end-column="29" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
-                <marker date="1502595729000" expanded="true" signature="1858:2025" ph="..." />
-                <marker date="1502595729000" expanded="true" signature="2130:2259" ph="..." />
-                <marker date="1502595729000" expanded="true" signature="2289:2424" ph="..." />
+                <marker date="1502599218000" expanded="true" signature="1852:2018" ph="..." />
+                <marker date="1502599218000" expanded="true" signature="2123:2251" ph="..." />
+                <marker date="1502599218000" expanded="true" signature="2281:2415" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Main.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/styles/Main.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="41" column="19" lean-forward="true" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -132,10 +130,10 @@
         <option value="$PROJECT_DIR$/src/components/Questions/AllQuestions.jsx" />
         <option value="$PROJECT_DIR$/src/components/Categories/Category.jsx" />
         <option value="$PROJECT_DIR$/src/components/Answers/Answer.jsx" />
-        <option value="$PROJECT_DIR$/src/styles/Main.css" />
-        <option value="$PROJECT_DIR$/src/components/Header/Header.jsx" />
         <option value="$PROJECT_DIR$/src/components/FlashCard/FlashCard.jsx" />
+        <option value="$PROJECT_DIR$/src/components/Header/Header.jsx" />
         <option value="$PROJECT_DIR$/src/components/Questions/Question.jsx" />
+        <option value="$PROJECT_DIR$/src/styles/Main.css" />
       </list>
     </option>
   </component>
@@ -310,12 +308,12 @@
       <workItem from="1502502478985" duration="255000" />
       <workItem from="1502510386260" duration="2091000" />
       <workItem from="1502549383799" duration="4767000" />
-      <workItem from="1502567218533" duration="11176000" />
+      <workItem from="1502567218533" duration="12629000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65373000" />
+    <option name="totallyTimeSpent" value="66826000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="563" y="92" width="877" height="804" extended-state="0" />
@@ -339,25 +337,6 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
-    <layout-to-restore>
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -426,9 +405,9 @@
           <caret line="8" column="14" lean-forward="false" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
-            <marker date="1502595729000" expanded="true" signature="1858:2025" ph="..." />
-            <marker date="1502595729000" expanded="true" signature="2130:2259" ph="..." />
-            <marker date="1502595729000" expanded="true" signature="2289:2424" ph="..." />
+            <marker date="1502599218000" expanded="true" signature="1852:2018" ph="..." />
+            <marker date="1502599218000" expanded="true" signature="2123:2251" ph="..." />
+            <marker date="1502599218000" expanded="true" signature="2281:2415" ph="..." />
           </folding>
         </state>
       </provider>
@@ -555,9 +534,9 @@
           <caret line="51" column="78" lean-forward="false" selection-start-line="51" selection-start-column="78" selection-end-line="51" selection-end-column="78" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
-            <marker date="1502595729000" expanded="true" signature="1858:2025" ph="..." />
-            <marker date="1502595729000" expanded="true" signature="2130:2259" ph="..." />
-            <marker date="1502595729000" expanded="true" signature="2289:2424" ph="..." />
+            <marker date="1502599218000" expanded="true" signature="1852:2018" ph="..." />
+            <marker date="1502599218000" expanded="true" signature="2123:2251" ph="..." />
+            <marker date="1502599218000" expanded="true" signature="2281:2415" ph="..." />
           </folding>
         </state>
       </provider>
@@ -736,27 +715,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/styles/Main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="41" column="19" lean-forward="true" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Header/Header.jsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="24" column="42" lean-forward="false" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-            <marker date="1502595729000" expanded="true" signature="1858:2025" ph="..." />
-            <marker date="1502595729000" expanded="true" signature="2130:2259" ph="..." />
-            <marker date="1502595729000" expanded="true" signature="2289:2424" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Categories/Category.jsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-570">
@@ -767,9 +725,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Header/Header.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="50" column="29" lean-forward="true" selection-start-line="50" selection-start-column="29" selection-end-line="50" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+            <marker date="1502599218000" expanded="true" signature="1852:2018" ph="..." />
+            <marker date="1502599218000" expanded="true" signature="2123:2251" ph="..." />
+            <marker date="1502599218000" expanded="true" signature="2281:2415" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Questions/Question.jsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="49" column="71" lean-forward="false" selection-start-line="49" selection-start-column="71" selection-end-line="49" selection-end-column="71" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/FlashCard/FlashCard.jsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="147">
+        <state relative-caret-position="88">
           <caret line="47" column="15" lean-forward="true" selection-start-line="47" selection-start-column="15" selection-end-line="47" selection-end-column="15" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
@@ -777,13 +758,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Questions/Question.jsx">
+    <entry file="file://$PROJECT_DIR$/src/styles/Main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1650">
-          <caret line="50" column="37" lean-forward="false" selection-start-line="50" selection-start-column="37" selection-end-line="50" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="725">
+          <caret line="62" column="1" lean-forward="true" selection-start-line="62" selection-start-column="1" selection-end-line="62" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>

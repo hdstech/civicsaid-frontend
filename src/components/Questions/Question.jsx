@@ -44,13 +44,13 @@ export default class Question extends Component {
                     <div className="card-header">
                         <h3 className="pull-left">{question.category}</h3>
 						<Dropdown className="pull-right" isOpen={this.state.dropdownOpen} toggle={this.toggleDropDown}>
-							<DropdownToggle caret>
+							<DropdownToggle className="language-btn" caret>
 								Language
 							</DropdownToggle>
-							<DropdownMenu>
-								<DropdownItem onClick={() => this.props.languageUpdate('english')}>English</DropdownItem>
-								<DropdownItem onClick={() => this.props.languageUpdate('spanish')}>Spanish</DropdownItem>
-								<DropdownItem onClick={() => this.props.languageUpdate('chinese')}>Chinese</DropdownItem>
+							<DropdownMenu className="language-drop-down">
+								<DropdownItem onClick={() => this.props.languageUpdate('english')}><span className="white-link">English</span></DropdownItem>
+								<DropdownItem onClick={() => this.props.languageUpdate('spanish')}><span className="white-link">Spanish</span></DropdownItem>
+								<DropdownItem onClick={() => this.props.languageUpdate('chinese')}><span className="white-link">Chinese</span></DropdownItem>
 							</DropdownMenu>
 						</Dropdown>
 						<div className="clearfix"/>

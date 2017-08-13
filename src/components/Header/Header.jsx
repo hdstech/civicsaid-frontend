@@ -24,32 +24,32 @@ export default class Header extends Component {
             <div>
                 <Nav className="header-nav">
                     <NavItem>
-                        <Link className="nav-link header-link" to="/">Home</Link>
+                        <Link className="nav-link white-link" to="/">Home</Link>
                     </NavItem>
                     <NavDropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
-                        <DropdownToggle nav caret className="header-link">Questions</DropdownToggle>
+                        <DropdownToggle nav caret className="white-link">Questions</DropdownToggle>
                         <DropdownMenu className="drop-down">
                             <DropdownItem>
-                                <Link to="/all-questions" className="header-link">All Questions</Link>
+                                <Link to="/all-questions" className="white-link">All Questions</Link>
                             </DropdownItem>
                             <DropdownItem divider/>
-                            <DropdownItem header className="header-link">Categories</DropdownItem>
+                            <DropdownItem header className="white-link">Categories</DropdownItem>
                             <DropdownItem>
-                                <Link to={`/questions/american-government`} className="header-link">American Government</Link>
+                                <Link to={`/questions/american-government`} className="white-link">American Government</Link>
                             </DropdownItem>
                             <DropdownItem>
-                                <Link to={`/questions/american-history`} className="header-link">American History</Link>
+                                <Link to={`/questions/american-history`} className="white-link">American History</Link>
                             </DropdownItem>
                             <DropdownItem>
-                                <Link to={`/questions/integrated-civics`} className="header-link">Integrated Civics</Link>
+                                <Link to={`/questions/integrated-civics`} className="white-link">Integrated Civics</Link>
                             </DropdownItem>
                         </DropdownMenu>
                     </NavDropdown>
                     <NavItem>
-                        <Link className="nav-link header-link" to="/vocabulary">Vocabulary</Link>
+                        <Link className="nav-link white-link" to="/vocabulary">Vocabulary</Link>
                     </NavItem>
                     <NavItem>
-                        <Link className="nav-link header-link" to="/additional-information">Info</Link>
+                        <Link className="nav-link white-link" to="/additional-information">Info</Link>
                     </NavItem>
                 </Nav>
                 <br/>
