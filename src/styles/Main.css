@@ -67,7 +67,7 @@
 }
 
 /**
-* Language DropDown Menu
+* Language DropDown Menu in flash card
  */
 .language-btn {
     background-color: #219ece !important;
@@ -79,4 +79,11 @@
 .language-drop-down {
     background-color: #1e77a0 !important;
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/**
+* Toggle switch in flash card
+ */
+.toggle-switch {
+    color: #3fc99a !important;
 }
