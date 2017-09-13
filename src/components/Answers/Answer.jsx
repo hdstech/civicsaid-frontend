@@ -40,7 +40,7 @@ export default class Answer extends Component {
 		return (
 			<div className="container-fluid">
 				<div className="card-header">
-					<h3>Answer<Toggle onClick={this.toggleAnswer}/></h3>
+					<h3>Show Answer<Toggle onClick={this.toggleAnswer}/></h3>
 				</div>
 				<Collapse isOpen={this.state.collapse}>
 					<div className="card">

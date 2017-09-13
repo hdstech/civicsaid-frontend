@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {Route, Switch} from 'react-router-dom';
 import Home from './Home/Home';
 import AllQuestions from './Questions/AllQuestions';
+import Questions from '../containers/Questions';
 import FlashCard from './FlashCard/FlashCard';
 import Category from './Categories/Category';
 import Vocabulary from './Vocabulary/Vocabulary';
@@ -13,7 +14,7 @@ export default class Main extends Component {
             <div>
                 <Switch>
                     <Route exact path='/' component={Home}/>
-                    <Route path='/all-questions' component={AllQuestions} />
+                    <Route path='/all-questions' component={Questions} />
                     <Route path='/flash-card/:id' component={FlashCard} />
                     <Route path='/questions/:category' component={Category}/>
                     <Route path='/vocabulary' component={Vocabulary}/>
