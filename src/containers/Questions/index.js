@@ -1,28 +1,33 @@
 import React, { Component } from 'react';
-import * as questions from '../../actions/questions';
+import { getQuestions } from '../../actions/questions';
+import { selectedQuestion } from '../../actions/question';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import '../../styles/Main.css';
+import {bindActionCreators} from 'redux';
 
 class Questions extends Component {
 	componentWillMount(){
-		this.props.getQuestions();
+		const {getQuestions} = this.props;
+		getQuestions();
 	}
+
 	render() {
+		const {questions, selectedQuestion} = this.props;
 		return (
 			<div className="container-fluid">
-				{this.props.questions.map((questions, i) => (
+				{questions.map((question, i) => (
 					<div key={i}>
 						<div className="container-fluid">
 							<div className="card">
 								<div className="card-header">
-									<h3>{questions.category}</h3>
+									<h3>{question.category}</h3>
 								</div>
 								<div className="card-block">
-									<h4>{questions.q_english}</h4>
+									<h4 className="card-text">{question.q_english}</h4>
 								</div>
-								<Link to={`flash-card/${questions.id}`}>
-									<button className="btn flash-card-btn">flash card</button>
+								<Link to={`flash-card/${question.id}`}>
+									<button className="btn flash-card-btn" onClick={() => selectedQuestion(question.id)}>flash card</button>
 								</Link>
 							</div>
 							<br/>
@@ -38,10 +43,15 @@ function mapStateToProps(state) {
 	return {
 		questions: state.questions.questions,
 		loading: state.questions.loading,
-		error: state.questions.error
+		error: state.questions.error,
+		selectedQuestion: state.question.selectedQuestion
 	}
 }
 
-export default connect(mapStateToProps, {getQuestions: questions.getQuestions})(Questions)
+function mapDispatchToProps(dispatch) {
+	return bindActionCreators({getQuestions, selectedQuestion}, dispatch)
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Questions);
 
 

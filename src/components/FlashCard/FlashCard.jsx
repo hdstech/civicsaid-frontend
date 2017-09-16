@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import axios from 'axios';
 import Question from '../Questions/Question';
+// import Question from '../../containers/Question';
 import Answer from "../Answers/Answer";
 import '../../styles/Main.css';
 

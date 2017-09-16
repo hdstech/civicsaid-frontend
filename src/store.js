@@ -2,12 +2,6 @@ import { applyMiddleware, compose, createStore } from 'redux'
 import { createLogger } from 'redux-logger'
 import promiseMiddleware from 'redux-promise-middleware'
 import rootReducer from './reducers/index'
-import questions from './reducers/questions';
-
-//default state application object
-const defaultState = {
-	// questions
-};
 
 const middleware = [];
 
@@ -27,6 +21,6 @@ enhancers.push(applyMiddleware(...middleware));
 const devTools = window.devToolsExtension ? window.devToolsExtension() : f => f;
 enhancers.push(devTools);
 
-const store = createStore(rootReducer, defaultState, compose(...enhancers));
+const store = createStore(rootReducer, compose(...enhancers));
 // console.log('default state of the store:' + store.getState())
 export default store;
