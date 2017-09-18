@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import Question from '../../containers/Question';
 import '../../styles/Main.css';
@@ -8,10 +8,10 @@ import {languageSelected} from '../../actions/language';
 
 class FlashCard extends Component {
 	render() {
-		const {selectedQuestion, languageSelected} = this.props;
+		const {selectedQuestion, language} = this.props;
 		return (
 			<div className="container-fluid">
-				<Question questionObj={selectedQuestion} language={languageSelected} languageUpdate={languageSelected}/>
+				<Question questionObj={selectedQuestion} language={language}/>
 				<br/>
 			</div>
 		);
@@ -21,7 +21,7 @@ class FlashCard extends Component {
 function mapStateToProps(state) {
 	return {
 		selectedQuestion: state.question.selectedQuestion,
-		languageSelected: state.language.languageSelected
+		language: state.language.languageSelected,
 	}
 }
 

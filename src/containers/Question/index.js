@@ -2,25 +2,19 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { languageSelected } from '../../actions/language';
 import { bindActionCreators } from 'redux';
-import {connect} from 'react-redux';
-import * as question from '../../services/question';
-import {LANGUAGE_ENGLISH} from '../../actions/actionsTypes';
-import {LANGUAGE_SPANISH} from '../../actions/actionsTypes';
-import {LANGUAGE_CHINESE} from '../../actions/actionsTypes';
+import { connect } from 'react-redux';
+import { LANGUAGE_ENGLISH } from '../../actions/actionsTypes';
+import { LANGUAGE_SPANISH } from '../../actions/actionsTypes';
+import { LANGUAGE_CHINESE } from '../../actions/actionsTypes';
 import '../../styles/Main.css';
 
 
 class Question extends Component {
-	componentWillMount(){
-		const {questionObj} = this.props;
-		question.getQuestion(6);
-	}
-
 	render() {
 		const {question, language, languageSelected} = this.props;
-		const selectedQuestion = languageSelected === LANGUAGE_SPANISH
+		const selectedQuestion = language === LANGUAGE_SPANISH
 			? question.q_spanish
-			: languageSelected === LANGUAGE_CHINESE
+			: language === LANGUAGE_CHINESE
 				? question.q_chinese
 				: question.q_english;
 		return (
@@ -69,7 +63,6 @@ class Question extends Component {
 Question.propTypes = {
 	questionObj: PropTypes.object,
 	language: PropTypes.string,
-	languageUpdate: PropTypes.func,
 };
 
 function mapStateToProps(state) {
