@@ -5,13 +5,13 @@ import '../../styles/Main.css';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import {languageSelected} from '../../actions/language';
+import language from '../../reducers/language';
 
 class FlashCard extends Component {
 	render() {
-		const {selectedQuestion, language} = this.props;
 		return (
 			<div className="container-fluid">
-				<Question questionObj={selectedQuestion} language={language}/>
+				<Question/>
 				<br/>
 			</div>
 		);
@@ -21,7 +21,7 @@ class FlashCard extends Component {
 function mapStateToProps(state) {
 	return {
 		selectedQuestion: state.question.selectedQuestion,
-		language: state.language.languageSelected,
+		language: state.language,
 	}
 }
 

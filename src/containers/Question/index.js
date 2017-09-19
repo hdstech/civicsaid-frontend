@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import { languageSelected } from '../../actions/language';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
@@ -11,12 +10,19 @@ import '../../styles/Main.css';
 
 class Question extends Component {
 	render() {
-		const {question, language, languageSelected} = this.props;
-		const selectedQuestion = language === LANGUAGE_SPANISH
-			? question.q_spanish
-			: language === LANGUAGE_CHINESE
-				? question.q_chinese
-				: question.q_english;
+		const {question, selectedLanguage, languageSelected} = this.props;
+		let selectedQuestion = selectedLanguage;
+		switch (selectedQuestion) {
+			case LANGUAGE_SPANISH:
+				selectedQuestion = question.q_spanish;
+				break;
+			case LANGUAGE_CHINESE:
+				selectedQuestion = question.q_chinese;
+				break;
+			default:
+				selectedQuestion = question.q_english;
+				break;
+		}
 		return (
 			<div className="container-fluid">
 				<div className="card">
@@ -60,15 +66,14 @@ class Question extends Component {
 	}
 }
 
-Question.propTypes = {
-	questionObj: PropTypes.object,
-	language: PropTypes.string,
-};
-
 function mapStateToProps(state) {
 	return {
 		question: state.question.selectedQuestion,
-		language: state.language.languageSelected
+		// get rid of these ---------->
+		// language: state.language,
+		// languageSelected: state.language.languageSelected,
+		// ---------------------------->
+		selectedLanguage: state.language.selectedLanguage
 	};
 }
 
