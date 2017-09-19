@@ -28,8 +28,8 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/containers/Question/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="582">
-              <caret line="18" column="34" lean-forward="true" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+            <state relative-caret-position="636">
+              <caret line="71" column="39" lean-forward="false" selection-start-line="71" selection-start-column="39" selection-end-line="71" selection-end-column="39" />
               <folding>
                 <element signature="e#0#41#0" expanded="true" />
               </folding>
@@ -362,12 +362,12 @@
       <workItem from="1505251776497" duration="573000" />
       <workItem from="1505268218954" duration="12307000" />
       <workItem from="1505398611168" duration="11806000" />
-      <workItem from="1505565515627" duration="13712000" />
+      <workItem from="1505565515627" duration="13755000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113550000" />
+    <option name="totallyTimeSpent" value="113593000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1440" y="-158" width="1920" height="1058" extended-state="6" />
@@ -793,8 +793,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/containers/Question/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="582">
-          <caret line="18" column="34" lean-forward="true" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+        <state relative-caret-position="636">
+          <caret line="71" column="39" lean-forward="false" selection-start-line="71" selection-start-column="39" selection-end-line="71" selection-end-column="39" />
           <folding>
             <element signature="e#0#41#0" expanded="true" />
           </folding>

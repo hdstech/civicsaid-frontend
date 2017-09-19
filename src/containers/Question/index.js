@@ -69,10 +69,6 @@ class Question extends Component {
 function mapStateToProps(state) {
 	return {
 		question: state.question.selectedQuestion,
-		// get rid of these ---------->
-		// language: state.language,
-		// languageSelected: state.language.languageSelected,
-		// ---------------------------->
 		selectedLanguage: state.language.selectedLanguage
 	};
 }
