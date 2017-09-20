@@ -1,11 +1,10 @@
 import React, {Component} from 'react';
-import PropTypes from 'prop-types';
 import Question from '../../containers/Question';
+import Answers from '../../containers/Answers';
 import '../../styles/Main.css';
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
 import {languageSelected} from '../../actions/language';
-import language from '../../reducers/language';
 
 class FlashCard extends Component {
 	render() {
@@ -13,6 +12,7 @@ class FlashCard extends Component {
 			<div className="container-fluid">
 				<Question/>
 				<br/>
+				<Answers/>
 			</div>
 		);
 	}
@@ -21,12 +21,7 @@ class FlashCard extends Component {
 function mapStateToProps(state) {
 	return {
 		selectedQuestion: state.question.selectedQuestion,
-		language: state.language,
 	}
 }
 
-function mapDispatchToProps(dispatch) {
-	return bindActionCreators({languageSelected}, dispatch)
-}
-
-export default connect(mapStateToProps,mapDispatchToProps)(FlashCard);
+export default connect(mapStateToProps)(FlashCard);
