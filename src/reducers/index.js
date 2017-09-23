@@ -1,13 +1,13 @@
 import { combineReducers } from 'redux';
-import questions from './questions';
-import question from './question';
 import language from './language';
+import question from './question';
+import questions from './questions';
 import answers from './answers';
 
 const rootReducer = combineReducers({
+	language,
 	question,
 	questions,
-	language,
 	answers
 });
 

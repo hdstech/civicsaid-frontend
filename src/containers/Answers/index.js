@@ -6,15 +6,8 @@ import { bindActionCreators } from 'redux';
 import {LANGUAGE_CHINESE, LANGUAGE_SPANISH} from '../../actions/actionsTypes';
 
 class Answers extends Component {
-	componentWillMount(){
-		const {getAnswers, question} = this.props;
-		console.log('question is: ' + getAnswers(6));
-		getAnswers(6);
-	}
-
 	render() {
 		const {answers, selectedLanguage} = this.props;
-		let selectedAnswer = selectedLanguage;
 		return (
 			<div className="container-fluid">
 				<div className="card">
@@ -22,9 +15,9 @@ class Answers extends Component {
 						{answers.map((answer, i) => (
 							<div key={i}>
 								<li className="card-text-size">
-									{selectedAnswer === LANGUAGE_SPANISH
+									{selectedLanguage === LANGUAGE_SPANISH
 									? answer.a_spanish
-									: selectedAnswer === LANGUAGE_CHINESE
+									: selectedLanguage === LANGUAGE_CHINESE
 										? answer.a_chinese
 										: answer.a_english}
 								</li>
@@ -40,7 +33,7 @@ class Answers extends Component {
 function mapStateToProps(state) {
 	return {
 		answers: state.answers.answers,
-		question: state.question,
+		question: state.question.selectedQuestion,
 		selectedLanguage: state.language.selectedLanguage
 	};
 }

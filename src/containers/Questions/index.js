@@ -5,6 +5,7 @@ import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import '../../styles/Main.css';
 import {bindActionCreators} from 'redux';
+import {getAnswers} from '../../actions/answers';
 
 class Questions extends Component {
 	componentWillMount(){
@@ -13,7 +14,7 @@ class Questions extends Component {
 	}
 
 	render() {
-		const {questions, selectedQuestion} = this.props;
+		const {questions, selectedQuestion, getAnswers} = this.props;
 		return (
 			<div className="container-fluid">
 				{questions.map((question, i) => (
@@ -27,7 +28,14 @@ class Questions extends Component {
 									<h4 className="card-text">{question.q_english}</h4>
 								</div>
 								<Link to={`flash-card/${question.id}`}>
-									<button className="btn flash-card-btn" onClick={() => selectedQuestion(question.id)}>flash card</button>
+									<button className="btn flash-card-btn"
+											onClick={() =>
+												{
+													selectedQuestion(question.id);
+													getAnswers(question.id);
+												}
+											}
+									>flash card</button>
 								</Link>
 							</div>
 							<br/>
@@ -44,12 +52,11 @@ function mapStateToProps(state) {
 		questions: state.questions.questions,
 		loading: state.questions.loading,
 		error: state.questions.error,
-		selectedQuestion: state.question.selectedQuestion
 	}
 }
 
 function mapDispatchToProps(dispatch) {
-	return bindActionCreators({getQuestions, selectedQuestion}, dispatch)
+	return bindActionCreators({getQuestions, selectedQuestion, getAnswers}, dispatch)
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Questions);

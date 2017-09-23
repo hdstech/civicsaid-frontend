@@ -1,10 +1,8 @@
 import React, {Component} from 'react';
 import {Route, Switch} from 'react-router-dom';
 import Home from './Home/Home';
-import AllQuestions from './Questions/AllQuestions';
 import Questions from '../containers/Questions';
-import FlashCard from '../containers/FlashCard';
-// import FlashCard from './FlashCard/FlashCard';
+import FlashCard from './FlashCard/index';
 import Category from './Categories/Category';
 import Vocabulary from './Vocabulary/Vocabulary';
 import Info from './InfoPage/Info';
