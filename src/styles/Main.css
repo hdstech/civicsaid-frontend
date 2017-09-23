@@ -21,6 +21,10 @@
 .card-text {
     padding: 10px;
 }
+
+.card-text-size {
+    font-size: larger;
+}
 /**
 * Header
  */
