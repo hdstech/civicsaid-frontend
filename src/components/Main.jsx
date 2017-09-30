@@ -3,7 +3,8 @@ import {Route, Switch} from 'react-router-dom';
 import Home from './Home/Home';
 import Questions from '../containers/Questions';
 import FlashCard from './FlashCard/index';
-import Category from './Categories/Category';
+// import Category from './Categories/Category';
+import Category from '../containers/Category';
 import Vocabulary from './Vocabulary/Vocabulary';
 import Info from './InfoPage/Info';
 

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { getQuestions } from '../../actions/questions';
+import { getCategoryQuestions } from '../../actions/category';
 import { selectedQuestion } from '../../actions/question';
 import { getAnswers } from '../../actions/answers';
 import { connect } from 'react-redux';
@@ -7,14 +7,15 @@ import { Link } from 'react-router-dom';
 import { bindActionCreators } from 'redux';
 import '../../styles/Main.css';
 
-class Questions extends Component {
-	componentWillMount(){
-		const {getQuestions} = this.props;
-		getQuestions();
+class Category extends Component {
+	componentWillMount() {
+		const {getCategoryQuestions} = this.props;
+		getCategoryQuestions(this.props.match.params.category);
 	}
 
 	render() {
 		const {questions, selectedQuestion, getAnswers} = this.props;
+		console.log('render questions: ' + questions);
 		return (
 			<div className="container-fluid">
 				{questions.map((question, i) => (
@@ -29,16 +30,15 @@ class Questions extends Component {
 								</div>
 								<Link to={`flash-card/${question.id}`}>
 									<button className="btn flash-card-btn"
-											onClick={() =>
-												{
-													selectedQuestion(question.id);
-													getAnswers(question.id);
+											onClick={() => {
+												selectedQuestion(question.id);
+												getAnswers(question.id);
 												}
 											}
-									>flash card</button>
+									>flash card
+									</button>
 								</Link>
 							</div>
-							<br/>
 						</div>
 					</div>
 				))}
@@ -49,16 +49,14 @@ class Questions extends Component {
 
 function mapStateToProps(state) {
 	return {
-		questions: state.questions.questions,
-		loading: state.questions.loading,
-		error: state.questions.error
+		category: state.category.questions,
+		loading: state.category.loading,
+		error: state.category.error
 	}
 }
 
 function mapDispatchToProps(dispatch) {
-	return bindActionCreators({getQuestions, selectedQuestion, getAnswers}, dispatch)
+	return bindActionCreators({getCategoryQuestions, selectedQuestion, getAnswers}, dispatch)
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Questions);
-
-
+export default connect(mapStateToProps, mapDispatchToProps)(Category);
