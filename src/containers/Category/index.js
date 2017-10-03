@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { getCategoryQuestions } from '../../actions/category';
+import { getCategoryQuestions, categorySelection } from '../../actions/category';
 import { selectedQuestion } from '../../actions/question';
 import { getAnswers } from '../../actions/answers';
 import { connect } from 'react-redux';
@@ -9,30 +9,30 @@ import '../../styles/Main.css';
 
 class Category extends Component {
 	componentWillMount() {
-		const {getCategoryQuestions} = this.props;
+		const {getCategoryQuestions, categorySelection} = this.props;
+		categorySelection(this.props.match.params.category);
 		getCategoryQuestions(this.props.match.params.category);
 	}
 
 	render() {
-		const {questions, selectedQuestion, getAnswers} = this.props;
-		console.log('render questions: ' + questions);
+		const {categoryQuestions, selectedQuestion, getAnswers} = this.props;
 		return (
 			<div className="container-fluid">
-				{questions.map((question, i) => (
+				{categoryQuestions.map((categoryQuestion, i) => (
 					<div key={i}>
 						<div className="container-fluid">
 							<div className="card">
 								<div className="card-header">
-									<h3>{question.category}</h3>
+									<h3>{categoryQuestion.category}</h3>
 								</div>
 								<div className="card-body">
-									<h4 className="card-text">{question.q_english}</h4>
+									<h4 className="card-text">{categoryQuestion.q_english}</h4>
 								</div>
-								<Link to={`flash-card/${question.id}`}>
+								<Link to={`flash-card/${categoryQuestion.id}`}>
 									<button className="btn flash-card-btn"
 											onClick={() => {
-												selectedQuestion(question.id);
-												getAnswers(question.id);
+												selectedQuestion(categoryQuestion.id);
+												getAnswers(categoryQuestion.id);
 												}
 											}
 									>flash card
@@ -49,14 +49,15 @@ class Category extends Component {
 
 function mapStateToProps(state) {
 	return {
-		category: state.category.questions,
+		categoryQuestions: state.category.questions,
+		selectedCategory: state.category.selectedCategory,
 		loading: state.category.loading,
 		error: state.category.error
 	}
 }
 
 function mapDispatchToProps(dispatch) {
-	return bindActionCreators({getCategoryQuestions, selectedQuestion, getAnswers}, dispatch)
+	return bindActionCreators({getCategoryQuestions, categorySelection, selectedQuestion, getAnswers}, dispatch)
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Category);

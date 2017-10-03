@@ -1,10 +1,12 @@
-import { FETCH_CATEGORY_QUESTIONS_PENDING} from '../actions/actionsTypes';
+import { FETCH_CATEGORY_QUESTIONS_PENDING } from '../actions/actionsTypes';
 import { FETCH_CATEGORY_QUESTIONS_REJECTED } from '../actions/actionsTypes';
 import { FETCH_CATEGORY_QUESTIONS_FULFILLED } from '../actions/actionsTypes';
+import { SELECTED_CATEGORY } from '../actions/actionsTypes';
 const initialState = {
 	loading: false,
 	questions: [],
-	error: null
+	error: null,
+	selectedCategory: ''
 };
 
 export default function(state = initialState, action) {
@@ -23,6 +25,8 @@ export default function(state = initialState, action) {
 				loading: false,
 				questions: action.payload
 			};
+		case SELECTED_CATEGORY:
+			return {...state, selectedCategory: action.payload};
 		default:
 			return state;
 	}
