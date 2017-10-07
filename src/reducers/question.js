@@ -11,11 +11,11 @@ const initialState = {
 export default function(state = initialState, action) {
 	switch(action.type) {
 		case SELECTED_QUESTION_PENDING:
-			return {...state, loading: true};
+			return {...state, loading: action.isLoading};
 		case SELECTED_QUESTION_REJECTED:
-			return {...state, loading: false, error: action.payload};
+			return {...state, loading: action.isLoading, error: action.hasErrored};
 		case SELECTED_QUESTION_FULFILLED:
-			return {...state, loading: false, selectedQuestion: action.payload};
+			return {...state, loading: action.isLoading, selectedQuestion: action.payload};
 		default:
 			return state;
 	}

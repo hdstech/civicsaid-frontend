@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { getQuestions } from '../../actions/questions';
-import { selectedQuestion } from '../../actions/question';
+import { selectedQuestionFetched } from '../../actions/question';
+import { getQuestion } from '../../services/question';
 import { getAnswers } from '../../actions/answers';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
@@ -14,7 +15,7 @@ class Questions extends Component {
 	}
 
 	render() {
-		const {questions, selectedQuestion, getAnswers} = this.props;
+		const {questions, getQuestion, getAnswers} = this.props;
 		return (
 			<div className="container-fluid">
 				{questions.map((question, i) => (
@@ -31,7 +32,7 @@ class Questions extends Component {
 									<button className="btn flash-card-btn"
 											onClick={() =>
 												{
-													selectedQuestion(question.id);
+													getQuestion(question.id);
 													getAnswers(question.id);
 												}
 											}
@@ -56,7 +57,7 @@ function mapStateToProps(state) {
 }
 
 function mapDispatchToProps(dispatch) {
-	return bindActionCreators({getQuestions, selectedQuestion, getAnswers}, dispatch)
+	return bindActionCreators({getQuestions, getQuestion, getAnswers}, dispatch)
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Questions);

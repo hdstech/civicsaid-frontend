@@ -1,6 +1,7 @@
 import { applyMiddleware, compose, createStore } from 'redux'
 import { createLogger } from 'redux-logger'
 import promiseMiddleware from 'redux-promise-middleware'
+import thunk from 'redux-thunk'
 import rootReducer from './reducers/index'
 
 const middleware = [];
@@ -12,6 +13,7 @@ if (process.env !== 'production') {
 /* ------------- Promise Middleware ------------- */
 
 middleware.push(promiseMiddleware());
+middleware.push(thunk);
 
 const enhancers = [];
 

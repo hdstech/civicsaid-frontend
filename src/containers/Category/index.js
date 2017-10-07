@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { getCategoryQuestions, categorySelection } from '../../actions/category';
-import { selectedQuestion } from '../../actions/question';
+import { selectedQuestionFetched } from '../../actions/question';
 import { getAnswers } from '../../actions/answers';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
@@ -15,7 +15,7 @@ class Category extends Component {
 	}
 
 	render() {
-		const {categoryQuestions, selectedQuestion, getAnswers} = this.props;
+		const {categoryQuestions, selectedQuestionFetched, getAnswers} = this.props;
 		return (
 			<div className="container-fluid">
 				{categoryQuestions.map((categoryQuestion, i) => (
@@ -31,7 +31,7 @@ class Category extends Component {
 								<Link to={`flash-card/${categoryQuestion.id}`}>
 									<button className="btn flash-card-btn"
 											onClick={() => {
-												selectedQuestion(categoryQuestion.id);
+												selectedQuestionFetched(categoryQuestion.id);
 												getAnswers(categoryQuestion.id);
 												}
 											}
@@ -57,7 +57,7 @@ function mapStateToProps(state) {
 }
 
 function mapDispatchToProps(dispatch) {
-	return bindActionCreators({getCategoryQuestions, categorySelection, selectedQuestion, getAnswers}, dispatch)
+	return bindActionCreators({getCategoryQuestions, categorySelection, selectedQuestionFetched, getAnswers}, dispatch)
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Category);
