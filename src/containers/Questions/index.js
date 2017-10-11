@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { getQuestions } from '../../actions/questions';
-import { selectedQuestionFetched } from '../../actions/question';
 import { getQuestion } from '../../services/question';
 import { getAnswers } from '../../actions/answers';
 import { connect } from 'react-redux';
@@ -9,7 +8,7 @@ import { bindActionCreators } from 'redux';
 import '../../styles/Main.css';
 
 class Questions extends Component {
-	componentWillMount(){
+	componentWillMount() {
 		const {getQuestions} = this.props;
 		getQuestions();
 	}
