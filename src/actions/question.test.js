@@ -5,7 +5,8 @@ test('it should return an error when fetching a question fails', () => {
 	const value = true;
 	const expectedAction = {
 		type: types.SELECTED_QUESTION_REJECTED,
-		hasErrored: true
+		hasErrored: true,
+		isLoading: false,
 	};
 	expect(actions.selectedQuestionHasErrored(value)).toEqual(expectedAction);
 });

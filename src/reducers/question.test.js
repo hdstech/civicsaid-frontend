@@ -4,16 +4,25 @@ import * as actionCreators from '../actions/question';
 const initialState = {
 	selectedQuestion: {},
 	loading: false,
-	error: null
+	error: null,
 };
 
 test('should return initial state', () => {
-	expect(question(undefined, {})).toEqual(initialState)
+	expect(question(undefined, {})).toEqual(initialState);
 });
 
 test('should return a true value for loading', () => {
 	const payload = {
-		loading: true
+		loading: true,
 	};
-	expect(question({}, actionCreators.selectedQuestionIsLoading(true))).toEqual(payload);
+	expect(question({}, actionCreators.selectedQuestionIsLoading(true))).
+	toEqual(payload);
+});
+
+test('should return an error if the fetch has failed', () => {
+	const payload = {
+		error: true,
+		loading: false,
+	};
+	expect(question({}, actionCreators.selectedQuestionHasErrored(true))).toEqual(payload);
 });

@@ -18,6 +18,7 @@ export function selectedQuestionHasErrored(bool) {
 	return {
 		type: SELECTED_QUESTION_REJECTED,
 		hasErrored: bool,
+		isLoading: false,
 	};
 }
 
