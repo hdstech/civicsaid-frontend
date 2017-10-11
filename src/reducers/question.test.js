@@ -1,10 +1,19 @@
-import reducer from './question';
-import * as types from '../actions/actionsTypes';
+import question from './question';
+import * as actionCreators from '../actions/question';
 
-test('should return the initial state', () => {
-	expect(reducer(undefined, {})).toEqual({
-		selectedQuestion: {},
-		loading: false,
-		error: null
-	});
+const initialState = {
+	selectedQuestion: {},
+	loading: false,
+	error: null
+};
+
+test('should return initial state', () => {
+	expect(question(undefined, {})).toEqual(initialState)
+});
+
+test('should return a true value for loading', () => {
+	const payload = {
+		loading: true
+	};
+	expect(question({}, actionCreators.selectedQuestionIsLoading(true))).toEqual(payload);
 });
