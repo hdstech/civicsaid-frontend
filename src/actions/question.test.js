@@ -34,6 +34,7 @@ test('it should return an object once a question is fetched', () => {
 	};
 	const expectedAction = {
 		type: types.SELECTED_QUESTION_FULFILLED,
+		isLoading: false,
 		payload: {
 			category: "AMERICAN GOVERNMENT",
 			created_at: "2017-03-04 18:22:42",

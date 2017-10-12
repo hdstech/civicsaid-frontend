@@ -32,6 +32,7 @@ export function selectedQuestionIsLoading(bool) {
 export function selectedQuestionFetched(question) {
 	return {
 		type: SELECTED_QUESTION_FULFILLED,
+		isLoading: false,
 		payload: question,
 	};
 }
