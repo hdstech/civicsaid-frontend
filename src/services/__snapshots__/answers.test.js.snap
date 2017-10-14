@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should return all answers for a single question 1`] = `
+Object {
+  "question": Object {
+    "answers": Array [
+      Object {
+        "a_chinese": "生命（的權利）",
+        "a_english": "life",
+        "a_spanish": "la vida",
+        "category": "AMERICAN GOVERNMENT",
+        "created_at": "2017-03-11 10:03:35",
+        "id": 19,
+        "question_id": 9,
+        "subcategory": "Principles of American Democracy",
+        "updated_at": "2017-03-11 10:03:35",
+      },
+      Object {
+        "a_chinese": "自由（的權利）",
+        "a_english": "liberty",
+        "a_spanish": "la libertad",
+        "category": "AMERICAN GOVERNMENT",
+        "created_at": "2017-03-11 10:03:35",
+        "id": 20,
+        "question_id": 9,
+        "subcategory": "Principles of American Democracy",
+        "updated_at": "2017-03-11 10:03:35",
+      },
+      Object {
+        "a_chinese": "追求幸福（的權利）",
+        "a_english": "pursuit of happiness",
+        "a_spanish": "la búsqueda de la felicidad",
+        "category": "AMERICAN GOVERNMENT",
+        "created_at": "2017-03-11 10:03:35",
+        "id": 21,
+        "question_id": 9,
+        "subcategory": "Principles of American Democracy",
+        "updated_at": "2017-03-11 10:03:35",
+      },
+    ],
+    "category": "AMERICAN GOVERNMENT",
+    "created_at": "2017-03-04 18:22:42",
+    "id": 9,
+    "is_favorite": 0,
+    "q_chinese": "列舉「獨立宣言」中的兩項權利 。",
+    "q_english": "What are two rights in the Declaration of Independence?",
+    "q_spanish": "¿Cuáles son dos derechos en la Declaración de la Independencia?",
+    "subcategory": "Principles of American Democracy",
+    "updated_at": "2017-03-04 18:22:42",
+  },
+}
+`;
