@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should return a single question object 1`] = `
+Object {
+  "question": Object {
+    "category": "AMERICAN GOVERNMENT",
+    "created_at": "2017-03-04 18:22:42",
+    "id": 6,
+    "is_favorite": 0,
+    "q_chinese": "列舉憲法第一條修正案中的一項權利或自由 。*",
+    "q_english": "What is one right or freedom from the First Amendment?*",
+    "q_spanish": "¿Cuál es un derecho o libertad que la Primera Enmienda garantiza?*",
+    "subcategory": "Principles of American Democracy",
+    "updated_at": "2017-03-04 18:22:42",
+  },
+}
+`;
