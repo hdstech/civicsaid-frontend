@@ -8,7 +8,7 @@ import { LANGUAGE_CHINESE } from '../../actions/actionsTypes';
 import '../../styles/Main.css';
 
 
-class Question extends Component {
+export class Question extends Component {
 	render() {
 		const {question, selectedLanguage, languageSelected} = this.props;
 		let selectedQuestion = selectedLanguage;

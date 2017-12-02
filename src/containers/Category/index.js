@@ -1,10 +1,10 @@
-import React, { Component } from 'react';
-import { getCategoryQuestions, categorySelection } from '../../actions/category';
-import { selectedQuestionFetched } from '../../actions/question';
-import { getAnswers } from '../../actions/answers';
-import { connect } from 'react-redux';
-import { Link } from 'react-router-dom';
-import { bindActionCreators } from 'redux';
+import React, {Component} from 'react';
+import {getCategoryQuestions, categorySelection} from '../../actions/category';
+import {selectedQuestionFetched} from '../../actions/question';
+import {getAnswers} from '../../actions/answers';
+import {connect} from 'react-redux';
+import {Link} from 'react-router-dom';
+import {bindActionCreators} from 'redux';
 import '../../styles/Main.css';
 
 class Category extends Component {
@@ -31,14 +31,16 @@ class Category extends Component {
 								<Link to={`flash-card/${categoryQuestion.id}`}>
 									<button className="btn flash-card-btn"
 											onClick={() => {
-												selectedQuestionFetched(categoryQuestion.id);
+												selectedQuestionFetched(
+													categoryQuestion.id);
 												getAnswers(categoryQuestion.id);
-												}
+											}
 											}
 									>flash card
 									</button>
 								</Link>
 							</div>
+							<br/>
 						</div>
 					</div>
 				))}
@@ -52,12 +54,17 @@ function mapStateToProps(state) {
 		categoryQuestions: state.category.questions,
 		selectedCategory: state.category.selectedCategory,
 		loading: state.category.loading,
-		error: state.category.error
-	}
+		error: state.category.error,
+	};
 }
 
 function mapDispatchToProps(dispatch) {
-	return bindActionCreators({getCategoryQuestions, categorySelection, selectedQuestionFetched, getAnswers}, dispatch)
+	return bindActionCreators({
+		getCategoryQuestions,
+		categorySelection,
+		selectedQuestionFetched,
+		getAnswers,
+	}, dispatch);
 }
 
 export default connect(mapStateToProps, mapDispatchToProps)(Category);
