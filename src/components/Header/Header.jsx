@@ -35,13 +35,13 @@ export default class Header extends Component {
                             <DropdownItem divider/>
                             <DropdownItem header><em><strong className="muted-txt">Categories</strong></em></DropdownItem>
                             <DropdownItem>
-                                <Link to={`/questions/american-government`} className="white-link">American Government</Link>
+                                <Link to={`/category/american-government`} className="white-link">American Government</Link>
                             </DropdownItem>
                             <DropdownItem>
-                                <Link to={`/questions/american-history`} className="white-link">American History</Link>
+                                <Link to={`/category/american-history`} className="white-link">American History</Link>
                             </DropdownItem>
                             <DropdownItem>
-                                <Link to={`/questions/integrated-civics`} className="white-link">Integrated Civics</Link>
+                                <Link to={`/category/integrated-civics`} className="white-link">Integrated Civics</Link>
                             </DropdownItem>
                         </DropdownMenu>
                     </NavDropdown>
