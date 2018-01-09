@@ -10,7 +10,7 @@ import Info from './InfoPage/Info';
 export default class Main extends Component {
     render() {
         return (
-            <div>
+            <div className="container">
                 <Switch>
                     <Route exact path='/' component={Home}/>
                     <Route path='/all-questions' component={Questions} />

@@ -22,7 +22,7 @@ export default class Header extends Component {
     render() {
         return (
             <div>
-                <Nav className="header-nav">
+                <Nav className="header-nav col-12">
                     <NavItem>
                         <Link className="nav-link white-link" to="/">Home</Link>
                     </NavItem>
